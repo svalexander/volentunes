@@ -10,24 +10,23 @@ import android.widget.Button;
  * Created by leighdouglas on 6/24/17.
  */
 
-public class EventDetailsActivity extends AppCompatActivity {
+public class LyricEarnedActivity extends AppCompatActivity {
 
-    private Button signUp;
-
+    Button next;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.details_screen_layout);
+        setContentView(R.layout.lyric_earned_activity);
         initViews();
     }
 
     public void initViews(){
-        signUp = (Button) findViewById(R.id.signup);
-        signUp.setOnClickListener(new View.OnClickListener() {
+        next = (Button) findViewById(R.id.nextbutton);
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(EventDetailsActivity.this, PasscodeActivity.class);
-                startActivity(i);
+                Intent intent = new Intent(getApplicationContext(), RedeemLyrics.class);
+                startActivity(intent);
             }
         });
     }

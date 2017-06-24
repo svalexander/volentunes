@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_gravity="top"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:src="@drawable/passcode" />
+
+    <EditText
+        android:id="@+id/passcodetext"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="enter number"/>
+
+    <Button
+        android:id="@+id/passcodesubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:background="@color/saveBtn"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/passcodetext"/>
+
+</RelativeLayout>
