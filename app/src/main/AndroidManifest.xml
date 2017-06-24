@@ -37,9 +37,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".EventDetailsActivity"/>
         <activity android:name=".ProfileActivity" />
         <activity android:name=".VolunteerPrefActivity" />
         <activity android:name=".MapsActivity"></activity>
+
     </application>
 
 </manifest>
