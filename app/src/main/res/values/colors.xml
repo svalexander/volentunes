@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="btn">#1fb288</color>
     <color name="saveBtn">#ed0f3a</color>
+    <color name="white">#fff</color>
+
 </resources>
