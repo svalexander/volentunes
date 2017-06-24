@@ -9,6 +9,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -50,16 +51,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng location1 = new LatLng(40.73551330580631, -73.98834497200824);
         LatLng location2 = new LatLng(40.63454489394634, -74.02560091774434);
 
+
         CameraUpdate zoom = CameraUpdateFactory.newLatLngZoom(art57, 11);
-        mMap.addMarker(new MarkerOptions().position(art57).title("Marker in Sydney"));
-        mMap.addMarker(new MarkerOptions().position(consumerhanover).title("Marker in Sydney"));
-        mMap.addMarker(new MarkerOptions().position(homeworkHelp).title("Marker in Sydney"));
-        mMap.addMarker(new MarkerOptions().position(bikeValet).title("Marker in Sydney"));
-
-        mMap.addMarker(new MarkerOptions().position(broome).title("Marker in Sydney"));
-
-        mMap.addMarker(new MarkerOptions().position(location1).title("Marker in Sydney"));
-        mMap.addMarker(new MarkerOptions().position(location2).title("Marker in Sydney"));
+        mMap.addMarker(new MarkerOptions().position(art57).title("Tutoring Children")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.addMarker(new MarkerOptions().position(consumerhanover).title("Tutoring Children")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.addMarker(new MarkerOptions().position(homeworkHelp).title("Tutoring Children")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.addMarker(new MarkerOptions().position(bikeValet).title("Tutoring Children")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.addMarker(new MarkerOptions().position(broome).title("Tutoring Children")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.addMarker(new MarkerOptions().position(location1).title("Tutoring Children")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.addMarker(new MarkerOptions().position(location2).title("Tutoring Children")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         mMap.moveCamera(zoom);
 
