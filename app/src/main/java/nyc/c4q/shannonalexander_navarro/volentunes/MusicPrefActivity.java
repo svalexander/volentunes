@@ -28,4 +28,6 @@ public class MusicPrefActivity extends AppCompatActivity {
             }
         });
     }
+
+    //just a note
 }
