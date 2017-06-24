@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nyc.c4q.shannonalexander_navarro.volentunes.MusicPrefActivity">
+
+    <TextView
+        android:id="@+id/volunteerPrefTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/chooseTV"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/rowOneVolunteerBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volunteerPrefTV"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/pubCleaningBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/btn"
+
+            android:text="Public Cleaning" />
+
+        <Button
+            android:id="@+id/foodBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/pubCleaningBtn"
+            android:background="@color/btn"
+            android:text="Food Donations" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowTwoVolunteerBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowOneVolunteerBtns"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp">
+
+
+        <Button
+            android:id="@+id/clothingBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/btn"
+            android:text="Clothing Donations" />
+
+        <Button
+            android:id="@+id/healthBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/clothingBtn"
+            android:background="@color/btn"
+            android:text="Healthcare Registry" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowThreeVolunteerBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowTwoVolunteerBtns"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp">
+
+
+        <Button
+            android:id="@+id/finServicesBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/btn"
+            android:text="Financial Services" />
+
+        <Button
+            android:id="@+id/taxBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/finServicesBtn"
+            android:background="@color/btn"
+            android:text="Tax Services" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/saveVolunteerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/saveBtn"
+        android:text="@string/save" />
+
+</RelativeLayout>
+

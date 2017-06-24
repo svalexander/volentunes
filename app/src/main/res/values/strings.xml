@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">volentunes</string>
     <string name="title_activity_maps">Map</string>
+    <string name="save">SAVE</string>
+    <string name="musicPref">What\'s your favorite music genre?</string>
+    <string name="chooseTV">Choosing a Volunteer Category</string>
 </resources>
