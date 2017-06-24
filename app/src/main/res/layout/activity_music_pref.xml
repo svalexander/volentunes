@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nyc.c4q.shannonalexander_navarro.volentunes.MusicPrefActivity">
+
+    <TextView
+        android:id="@+id/musicPrefTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/musicPref"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:id="@+id/rowOneBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/musicPrefTV"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/hipHopBtn"
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/btn"
+
+            android:text="Hip-Hop" />
+
+        <Button
+            android:id="@+id/rockBtn"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/hipHopBtn"
+            android:background="@color/btn"
+            android:text="Rock" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/rowTwoBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowOneBtns">
+
+
+        <Button
+            android:layout_marginRight="20dp"
+            android:id="@+id/jazzBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/btn"
+            android:text="Jazz" />
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/countryBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/jazzBtn"
+            android:background="@color/btn"
+            android:text="Country" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/rowThreeBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowTwoBtns">
+
+
+        <Button
+            android:layout_marginRight="20dp"
+            android:id="@+id/popBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/btn"
+            android:text="Pop" />
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/randbBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/popBtn"
+            android:background="@color/btn"
+            android:text="R&amp;B" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/saveMusicBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/saveBtn"
+        android:text="@string/save" />
+
+</RelativeLayout>

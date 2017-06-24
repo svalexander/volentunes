@@ -30,8 +30,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps">
+            android:name=".MusicPrefActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,6 +38,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".EventDetailsActivity"/>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".VolunteerPrefActivity" />
+        <activity android:name=".MapsActivity"></activity>
+
     </application>
 
 </manifest>
