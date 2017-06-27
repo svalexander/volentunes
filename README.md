@@ -7,4 +7,4 @@ The user first saves their music and volunteer preferences, is then led to a lis
 After completing the volunteer work they are given a code which gives them a lyric, which is a sort of currency to redeem prizes.
 After getting enough lyrics for a full song users can then redeem them for concert tickets. 
 
-![Alt Text](http://i.imgur.com/azgFOON.gif)
+
